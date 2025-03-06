@@ -1,0 +1,550 @@
+Index,Artist,Date,Venue,City,Latitude,Longitude
+1,James Blunt,2025/3/4,Ziggo Dome,Amsterdam,52.31345,4.93719
+2,Sturgill Simpson,2025/3/4,Paradiso Grote Zaal,Amsterdam,52.36228,4.88395
+3,Ksenija Sidorova and Thomas Hampson,2025/3/4,"Kleine Zaal, Concertgebouw Amsterdam",Amsterdam,52.35588,4.87903
+4,Jonah Kagen,2025/3/5,Paradiso,Amsterdam,52.36228,4.88395
+5,HENGE,2025/3/5,Melkweg,Amsterdam,52.36484,4.88127
+6,RIKAS,2025/3/5,Cinetol,Amsterdam,52.35281,4.90657
+7,Babs,2025/3/5,Paradiso,Amsterdam,52.36228,4.88395
+8,aespa,2025/3/6,AFAS Live,Amsterdam,52.31216,4.94467
+9,RY X,2025/3/6,Paradiso,Amsterdam,52.36228,4.88395
+10,Martin Kohlstedt,2025/3/6,Het Koninklijk Concertgebouw,Amsterdam,52.35597,4.87856
+11,Ditz,2025/3/6,Paradiso,Amsterdam,52.36228,4.88395
+12,Nadia Reid,2025/3/6,"Paradiso, upstairs",Amsterdam,Unknown,Unknown
+13,Yael Deckelbaum,2025/3/6,Amstelkerk,Amsterdam,52.36229,4.89648
+14,Simon Stuij,2025/3/6,Volta,Amsterdam,52.38609,4.88184
+15,Valet,2025/3/6,Club Inn,Amsterdam,52.36482,4.88199
+16,RY X,2025/3/7,Paradiso Grote Zaal,Amsterdam,52.36228,4.88395
+17,dublon,2025/3/7,Paradiso,Amsterdam,52.36228,4.88395
+18,"DJ Hype, Uncle Dugs, Kenny Ken, Dj Inter, Dillinja, Fearless, DJ Brockie, Iration Steppas, Mc Det, The Ragga Twins, DJ Rap, Aphrodite, Jumping Jack Frost, Bryan Gee, Demolition Man, DJ Nicky Blackmarket, Moose, MC Moose, Darren Jay, MC Spyda, Navigator, MC Navigator, Shumba Youth, King Yoof, John B, Kleu, Kalia, and Adi-J",2025/3/7,Panama Amsterdam,Amsterdam,52.37493,4.93031
+19,Holland Zingt Hazes,2025/3/7,Ziggo Dome,Amsterdam,52.31345,4.93719
+20,Priori,2025/3/7,Garage Noord,Amsterdam,52.38557,4.92572
+21,Yael Deckelbaum,2025/3/7,Dominicuskerk,Amsterdam,52.377,4.89335
+22,Kingdom of Desire,2025/3/7,Poppodium Q-Factory,Amsterdam,52.35762,4.9304
+23,Maylay Sparks,2025/3/7,Unknown,Amsterdam,52.37022,4.89517
+24,BIIG PIIG,2025/3/8,Melkweg Max & Oz,Amsterdam,52.36493,4.8817
+25,Laura Misch,2025/3/8,Bimhuis,Amsterdam,52.37815,4.91283
+26,Holland Zingt Hazes,2025/3/8,Ziggo Dome,Amsterdam,52.31345,4.93719
+27,COLLIGNON and Kypski,2025/3/8,Skatecafe,Amsterdam,52.38548,4.92553
+28,Saskia Laroo,2025/3/8,TOBACCO Theater,Amsterdam,52.36962,4.89328
+29,Belfountain,2025/3/8,Parlour,Amsterdam,52.35054,4.89079
+30,Swan (Amsterdam),2025/3/8,Melkweg Upstairs,Amsterdam,52.36484,4.88127
+31,Joia,2025/3/8,Theater City of Wesopa,Weesp,52.30887,5.03978
+32,MUZZ (UK),2025/3/8,Lofi,Amsterdam,52.39125,4.82422
+33,Feid,2025/3/9,AFAS Live,Amsterdam,52.31216,4.94467
+34,Jamie Miller,2025/3/9,Melkweg OZ,Amsterdam,52.36484,4.88127
+35,Kitty Liv,2025/3/9,Paradiso Kleine Zaal,Amsterdam,52.36228,4.88395
+36,"Ties Mellema, Vinkepeezer, Michiel van Dijk, Jeanine Valeriano, and Tom Aldrich",2025/3/9,GROND,Amsterdam,52.33588,4.92661
+37,Tamino,2025/3/10,Koninklijk Theater Carr¨¦,Amsterdam,52.36238,4.90388
+38,Lalah Hathaway,2025/3/10,Paradiso,Amsterdam,52.36228,4.88395
+39,Jamie xx,2025/3/11,AFAS Live,Amsterdam,52.31216,4.94467
+40,Tindersticks,2025/3/11,Koninklijk Theater Carr¨¦,Amsterdam,52.36238,4.90388
+41,Noa (Achinoam Nini),2025/3/11,Liberaal Joodse Gemeente,Amsterdam,52.3382,4.89821
+42,MIKE (Rapper),2025/3/11,Melkweg OZ,Amsterdam,52.36484,4.88127
+43,Oisin Leech,2025/3/11,Koninklijk Theater Carr¨¦,Amsterdam,52.36238,4.90388
+44,The Dead South,2025/3/12,AFAS Live,Amsterdam,52.31216,4.94467
+45,Lucy Dacus,2025/3/12,Vondelkerk,Amsterdam,52.3613,4.87361
+46,BAYNK,2025/3/12,Paradiso,Amsterdam,52.36228,4.88395
+47,Rebecca Black,2025/3/12,Melkweg OZ,Amsterdam,52.36484,4.88127
+48,Herman van Veen,2025/3/12,Koninklijk Theater Carr¨¦,Amsterdam,52.36238,4.90388
+49,julie (us),2025/3/12,"Paradiso Noord, Tolhuistuin",Amsterdam,52.38308,4.90303
+50,Jaya the Cat,2025/3/13,Melkweg,Amsterdam,52.36484,4.88127
+51,Herman van Veen,2025/3/13,Koninklijk Theater Carr¨¦,Amsterdam,52.36238,4.90388
+52,Lemon,2025/3/13,Cafe Sound Garden,Amsterdam,52.37297,4.8758
+53,Stereocilia,2025/3/13,Dokhuis Galerie,Amsterdam,52.3686,4.91133
+54,Tess Merlot,2025/3/13,De Roode Bioscoop,Amsterdam,52.38403,4.88395
+55,Truncate and Marco Ramos,2025/3/13,Club John Doe,Amsterdam,52.36648,4.8976
+56,Herman van Veen,2025/3/14,Koninklijk Theater Carr¨¦,Amsterdam,52.36238,4.90388
+57,Sun-Mi Hong Quintet,2025/3/14,Bimhuis,Amsterdam,52.37815,4.91283
+58,Mathieu Sylvestre,2025/3/14,Vondelbunker,Amsterdam,52.35799,4.86865
+59,Symphony of Magic ¨C The Music of Harry Potter Live,2025/3/14,Rai Amsterdam,Amsterdam,52.34322,4.89128
+60,Eyecloser,2025/3/14,Caf¨¦ de Afdeling,Amsterdam,52.402,4.93591
+61,The Butterflies of Babylon 2025,2025/3/14,Gardens of Babylon,Amsterdam,Unknown,Unknown
+62,Butterflies in Babylon 2025,2025/3/14,Thuishaven,Amsterdam,52.39589,4.85527
+63,Holland Zingt Hazes,2025/3/15,Ziggo Dome,Amsterdam,52.31345,4.93719
+64,RaNi,2025/3/15,Tolhuistuin,Amsterdam,52.38515,4.90023
+65,Viken Arman,2025/3/15,Thuishaven Terrein,Amsterdam,52.39589,4.85527
+66,Herman van Veen,2025/3/15,Koninklijk Theater Carr¨¦,Amsterdam,52.36238,4.90388
+67,Faux Real,2025/3/15,Paradiso,Amsterdam,52.36228,4.88395
+68,Global Charming,2025/3/15,Paradiso,Amsterdam,52.36228,4.88395
+69,Symphony of Magic ¨C The Music of Harry Potter Live,2025/3/15,Rai Amsterdam,Amsterdam,52.34322,4.89128
+70,Be Lion,2025/3/15,8sixA,Amsterdam,52.40026,4.8956
+71,Frank van Etten ¨C Feestje op Wielen 2025,2025/3/15,AFAS Live,Amsterdam,52.31216,4.94467
+72,Jalen Ngonda,2025/3/16,Paradiso Grote Zaal,Amsterdam,52.36228,4.88395
+73,Ghost Funk Orchestra,2025/3/16,Paradiso,Amsterdam,52.36228,4.88395
+74,Hannah Mae,2025/3/16,"Paradiso Noord, Tolhuistuin",Amsterdam,52.38308,4.90303
+75,Holland Zingt Hazes,2025/3/16,Ziggo Dome,Amsterdam,52.31345,4.93719
+76,Helicon Glasgow,2025/3/16,De Verbroederij,Amsterdam,Unknown,Unknown
+77,Rick Treffers and Muno Na Baka,2025/3/16,Zaal 100,Amsterdam,52.38294,4.87801
+78,Alex Warren,2025/3/17,AFAS Live,Amsterdam,52.31216,4.94467
+79,Zaho de Sagazan,2025/3/17,Paradiso,Amsterdam,52.36228,4.88395
+80,The Rumjacks,2025/3/17,Melkweg,Amsterdam,52.36484,4.88127
+81,Pelin Vedis,2025/3/17,Club John Doe,Amsterdam,52.36648,4.8976
+82,Sam Fender,2025/3/18,AFAS Live,Amsterdam,52.31216,4.94467
+83,Warhaus,2025/3/18,Royal Theater Carr¨¦,Amsterdam,52.36195,4.90476
+84,Dirty Loops,2025/3/19,Melkweg Max,Amsterdam,52.37022,4.89517
+85,Jazz Sabbath,2025/3/19,Splendor Amsterdam,Amsterdam,52.3699,4.9033
+86,Herman van Veen,2025/3/19,Koninklijk Theater Carr¨¦,Amsterdam,52.36238,4.90388
+87,Braindogs,2025/3/19,Poppodium Q-Factory,Amsterdam,52.35762,4.9304
+88,Symphony of Magic ¨C The Music of Harry Potter Live,2025/3/19,Het Koninklijk Concertgebouw,Amsterdam,52.35597,4.87856
+89,nici,2025/3/19,Vrankrijk,Amsterdam,Unknown,Unknown
+90,Alan Walker,2025/3/20,AFAS Live,Amsterdam,52.31216,4.94467
+91,Oscar & the Wolf and Martha Da¡¯ro,2025/3/20,Ziggo Dome,Amsterdam,52.31345,4.93719
+92,Herman van Veen,2025/3/20,Koninklijk Theater Carr¨¦,Amsterdam,52.36238,4.90388
+93,Jayzo,2025/3/20,Club Inn,Amsterdam,52.36482,4.88199
+94,Alec Benjamin,2025/3/21,AFAS Live,Amsterdam,52.31216,4.94467
+95,Orbital,2025/3/21,Paradiso Grote Zaal,Amsterdam,52.36228,4.88395
+96,Coco & Clair Clair,2025/3/21,Melkweg,Amsterdam,52.36484,4.88127
+97,Herman van Veen,2025/3/21,Koninklijk Theater Carr¨¦,Amsterdam,52.36238,4.90388
+98,Thomas Azier,2025/3/21,Tolhuistuin,Amsterdam,52.38515,4.90023
+99,Moses Yoofee Trio,2025/3/21,Bimhuis,Amsterdam,52.37815,4.91283
+100,Ben Sims,2025/3/21,Lofi,Amsterdam,52.39125,4.82422
+101,Stormstress,2025/3/21,The Cave,Amsterdam,52.36441,4.88487
+102,Job Alone ( & Friends),2025/3/21,Mulligan's,Amsterdam,52.36698,4.89675
+103,Wishful Singing and Aart Bergwerff,2025/3/21,Westerkerk,Amsterdam,52.37444,4.8835
+104,Sico Vox,2025/3/21,De Ebeling,Amsterdam,52.36331,4.87657
+105,Multiple People and Mori Mori,2025/3/21,Cinetol,Amsterdam,52.35281,4.90657
+106,TaliaBLE and MC Chickaboo,2025/3/21,Garage Noord,Amsterdam,52.38557,4.92572
+107,Skunk Anansie and Grove,2025/3/22,AFAS Live,Amsterdam,52.31216,4.94467
+108,Herman van Veen,2025/3/22,Koninklijk Theater Carr¨¦,Amsterdam,52.36238,4.90388
+109,Joia,2025/3/22,"Theater Dillewijn, Ankeveen",Amsterdam,52.26305,5.09761
+110,Sabrina Carpenter,2025/3/23,Ziggo Dome,Amsterdam,52.31345,4.93719
+111,Herman van Veen,2025/3/23,Koninklijk Theater Carr¨¦,Amsterdam,52.36238,4.90388
+112,Vector and Seun Kuti,2025/3/23,Undercurrent,Amsterdam,52.40641,4.88719
+113,Lenny Kravitz and Durand Jones & The Indications,2025/3/24,Ziggo Dome,Amsterdam,52.31345,4.93719
+114,Bear's Den,2025/3/24,Royal Theater Carr¨¦,Amsterdam,52.36195,4.90476
+115,Thus Love,2025/3/24,Tolhuistuin,Amsterdam,52.38515,4.90023
+116,Marta Arpini,2025/3/24,Paradiso,Amsterdam,52.36228,4.88395
+117,Bear's Den,2025/3/25,Koninklijk Theater Carr¨¦,Amsterdam,52.36238,4.90388
+118,Orla Gartland,2025/3/25,Melkweg Max,Amsterdam,52.37022,4.89517
+119,Gavin James,2025/3/25,Paradiso,Amsterdam,52.36228,4.88395
+120,Soap&Skin,2025/3/25,Melkweg OZ,Amsterdam,52.36484,4.88127
+121,"Ravi Coltrane, Danilo P¨¦rez, Brian Blade, and John Patitucci",2025/3/25,Muziekgebouw,Amsterdam,52.37835,4.91311
+122,eloi youssef and Kamerata Zuid String Orchestra,2025/3/25,Het Koninklijk Concertgebouw,Amsterdam,52.35597,4.87856
+123,1000mods,2025/3/26,Melkweg,Amsterdam,52.36484,4.88127
+124,Jasper Steverlinck,2025/3/26,Tolhuistuin,Amsterdam,52.38515,4.90023
+125,Loserville 2025,2025/3/26,Ziggo Dome,Amsterdam,52.31345,4.93719
+126,Ilse DeLange,2025/3/27,AFAS Live,Amsterdam,52.31216,4.94467
+127,JPattersson,2025/3/27,Ruigoord Kerk,Amsterdam,52.41033,4.74907
+128,Nagasaki Swim,2025/3/27,Paradiso Kleine Zaal,Amsterdam,52.36228,4.88395
+129,Sef (Yousef Gnaoui),2025/3/27,Paradiso,Amsterdam,52.36228,4.88395
+130,Metrik,2025/3/28,Melkweg OZ,Amsterdam,52.36484,4.88127
+131,The Coronas,2025/3/28,Tolhuistuin,Amsterdam,52.38515,4.90023
+132,"VNTM, ?me, and Eli Verveine",2025/3/28,Lofi,Amsterdam,52.39125,4.82422
+133,Ryan Harris,2025/3/28,Paradiso,Amsterdam,52.36228,4.88395
+134,Black Market Karma,2025/3/28,Poppodium Q-Factory,Amsterdam,52.35762,4.9304
+135,Arcando,2025/3/28,Melkweg,Amsterdam,52.36484,4.88127
+136,Mount Turmoil,2025/3/28,Volta,Amsterdam,52.38609,4.88184
+137,Gregory Porter,2025/3/29,Ziggo Dome,Amsterdam,52.31345,4.93719
+138,070 Shake,2025/3/29,Paradiso,Amsterdam,52.36228,4.88395
+139,Teho,2025/3/29,Melkweg,Amsterdam,52.36484,4.88127
+140,Joris Delacroix,2025/3/29,Melkweg,Amsterdam,52.36484,4.88127
+141,Grey daze,2025/3/29,Q Factory,Amsterdam,52.35762,4.9304
+142,Spartaque,2025/3/29,Lagerwal,Amsterdam,Unknown,Unknown
+143,Al-Qasar,2025/3/29,Paradiso,Amsterdam,52.36228,4.88395
+144,DJ Denden,2025/3/29,Akhnaton,Amsterdam,52.37614,4.89416
+145,Ghosts of Babylon,2025/3/29,The Cave,Amsterdam,52.36441,4.88487
+146,GUIDO Musik,2025/3/29,Het Koninklijk Concertgebouw,Amsterdam,52.35597,4.87856
+147,Rockin'Em,2025/3/29,Kompaszaal,Amsterdam,Unknown,Unknown
+148,MICHELLE NYC,2025/3/29,Bitterzoet,Amsterdam,52.3774,4.89422
+149,Pervin Chakar,2025/3/29,Vondelkerk,Amsterdam,52.3613,4.87361
+150,Soundrush (Journey Through Sound) 2025,2025/3/29,Hemkade 48,Zaandam,Unknown,Unknown
+151,Dayglow,2025/3/30,Melkweg,Amsterdam,52.36484,4.88127
+152,Mackenzy Mackay,2025/3/30,Melkweg OZ,Amsterdam,52.36484,4.88127
+153,Tequilajazzz,2025/3/30,Bitterzoet,Amsterdam,52.3774,4.89422
+154,Joe Puglia,2025/3/30,Muziekgebouw aan 't IJ,Amsterdam,52.37853,4.90814
+155,Tomode,2025/3/30,Toekomstmuziek,Amsterdam,Unknown,Unknown
+156,The Wombats,2025/3/31,Paradiso,Amsterdam,52.36228,4.88395
+157,BDRMM,2025/3/31,Melkweg OZ,Amsterdam,52.36484,4.88127
+158,Thuy,2025/3/31,Melkweg,Amsterdam,52.36484,4.88127
+159,TOMORROW X TOGETHER,2025/4/1,Ziggo Dome,Amsterdam,52.31345,4.93719
+160,Ofenbach,2025/4/1,Tolhuistuin,Amsterdam,52.38515,4.90023
+161,Lagum,2025/4/1,Melkweg Max & Oz,Amsterdam,52.36493,4.8817
+162,Sungazer,2025/4/2,"Paradiso Noord, Tolhuistuin",Amsterdam,52.38308,4.90303
+163,Leifur James,2025/4/2,Paradiso,Amsterdam,52.36228,4.88395
+164,Mr Traumatik,2025/4/2,Club Smokey,Amsterdam,52.36573,4.89607
+165,Panchiko,2025/4/3,Tolhuistuin,Amsterdam,52.38515,4.90023
+166,KLANGPHONICS,2025/4/3,Melkweg,Amsterdam,52.36484,4.88127
+167,Santi & Tugce,2025/4/3,Bitterzoet,Amsterdam,52.3774,4.89422
+168,NEEVE,2025/4/3,Melkweg Upstairs,Amsterdam,52.36484,4.88127
+169,The Lasses and Kathryn Claire,2025/4/3,Theater De Roode Bioscoop,Amsterdam,52.38411,4.88396
+170,The Lasses and Kathryn Claire,2025/4/3,Theater De Roode Bioscoop,Amsterdam,52.38411,4.88396
+171,Simon Keizer,2025/4/3,Zaantheater,Zaandam,52.43852,4.82511
+172,Joia,2025/4/3,De Kleine Komedie,Amsterdam,52.36695,4.8958
+173,Mr Traumatik,2025/4/3,Club Smokey,Amsterdam,52.36573,4.89607
+174,"Nils Wogram, Nils Wogram Root 70, Hayden Chisholm, Matt Penman, Jochen Rueckert, and Martin Fondse",2025/4/3,Splendor,Amsterdam,52.3699,4.90318
+175,Marble Waves,2025/4/3,Zonnehuis,Amsterdam,52.41341,4.89126
+176,Ladies of Soul,2025/4/4,Ziggo Dome,Amsterdam,52.31345,4.93719
+177,Ashley Henry,2025/4/4,Club Kazoo @ Tolhuis,Amsterdam,Unknown,Unknown
+178,nick barbachano,2025/4/4,Dominicuskerk,Amsterdam,52.377,4.89335
+179,Azu Tiwaline,2025/4/4,Radion,Amsterdam,52.37022,4.89517
+180,Quentyn,2025/4/4,Cinetol,Amsterdam,52.35281,4.90657
+181,Marcus Henry V,2025/4/4,Unknown,Amsterdam,52.37022,4.89517
+182,Ladies of Soul,2025/4/5,Ziggo Dome,Amsterdam,52.31345,4.93719
+183,Snapped Ankles,2025/4/5,Paradiso Tolhuistuin,Amsterdam,52.38308,4.90303
+184,Mason,2025/4/5,Loods 12 Amsterdam Noord,Amsterdam,52.38411,4.92051
+185,"Shkodra Elektronike, Claude, Red Sebastian, JJ, Erika Vikman, Justyna Steczkowska, and Kyle Alessandro",2025/4/5,AFAS Live,Amsterdam,52.31216,4.94467
+186,"Imaani, Serhat, Luke Black, Kaleen, Krista Siegfrids, and Konstrakta",2025/4/5,Afas Talent Stage,Amsterdam,52.31252,4.94397
+187,"Montis, Goudsmit & Directie",2025/4/5,Jazzhuis Abcoude,Abcoude,52.27022,4.97421
+188,GREH,2025/4/5,The Cave,Amsterdam,52.36441,4.88487
+189,Eric Vloeimans and J?rg Brinkmann,2025/4/5,Bon Theater,Medemblik,52.7622,5.10165
+190,SPAWN (NL),2025/4/5,De Nieuwe Anita,Amsterdam,52.37417,4.87269
+191,The Pekkers,2025/4/5,Unknown,Amsterdam,52.37022,4.89517
+192,Ladies of Soul,2025/4/6,Ziggo Dome,Amsterdam,52.31345,4.93719
+193,Jack and Jack,2025/4/6,Melkweg,Amsterdam,52.36484,4.88127
+194,Alison Moyet,2025/4/7,Paradiso Grote Zaal,Amsterdam,52.36228,4.88395
+195,Die Verlierer,2025/4/7,OCCII,Amsterdam,52.37022,4.89517
+196,CENTRAL CEE,2025/4/8,Ziggo Dome,Amsterdam,52.31345,4.93719
+197,Gigi Perez,2025/4/8,Paradiso Grote Zaal,Amsterdam,52.36228,4.88395
+198,¦²tella (GR),2025/4/8,Bitterzoet,Amsterdam,52.3774,4.89422
+199,Wolfgang Valbrun,2025/4/8,Paradiso,Amsterdam,52.36228,4.88395
+200,"Kaytranada, Sango, and Lou Phelps",2025/4/9,AFAS Live,Amsterdam,52.31216,4.94467
+201,David Gray,2025/4/9,Koninklijk Theater Carr¨¦,Amsterdam,52.36238,4.90388
+202,Disiz,2025/4/9,Melkweg,Amsterdam,52.36484,4.88127
+203,Fischer-Z Solo,2025/4/9,Melkweg,Amsterdam,52.36484,4.88127
+204,"Kaytranada, Sango, and Lou Phelps",2025/4/10,AFAS Live,Amsterdam,52.31216,4.94467
+205,David Gray,2025/4/10,Koninklijk Theater Carr¨¦,Amsterdam,52.36238,4.90388
+206,Hania Rani,2025/4/10,Het Koninklijk Concertgebouw,Amsterdam,52.35597,4.87856
+207,The Mary Wallopers,2025/4/10,Paradiso Grote Zaal,Amsterdam,52.36228,4.88395
+208,The Selecter,2025/4/10,Melkweg,Amsterdam,52.36484,4.88127
+209,Allman Brown,2025/4/10,Bitterzoet,Amsterdam,52.3774,4.89422
+210,Cristina Branco,2025/4/10,Theater De Meervaart,Amsterdam,52.35914,4.80815
+211,Ji,2025/4/10,Melkweg + Sugarfactory,Amsterdam,52.36493,4.8817
+212,J.I. Prince of NY,2025/4/10,Melkweg Max & Oz,Amsterdam,52.36493,4.8817
+213,MONTE MAI,2025/4/10,Cinetol,Amsterdam,52.35281,4.90657
+214,ANOTR,2025/4/11,AFAS Live,Amsterdam,52.31216,4.94467
+215,okgiorgio,2025/4/11,Paradiso,Amsterdam,52.36228,4.88395
+216,Anna-Rose Clayton,2025/4/11,Paradiso Tolhuistuin,Amsterdam,52.38308,4.90303
+217,Sico Vox,2025/4/11,De Ebeling,Amsterdam,52.36331,4.87657
+218,Luka Schuurman,2025/4/11,ADM Noord,Amsterdam,Unknown,Unknown
+219,Tess Merlot,2025/4/11,Cultureel Centrum Bullekerk,Zaandam,52.44458,4.81888
+220,Alexander Delanois,2025/4/11,oosterbar,Amsterdam,52.37022,4.89517
+221,Oracle Sisters,2025/4/12,Paradiso,Amsterdam,52.36228,4.88395
+222,Oddisee and GOOD COMPNY,2025/4/12,Melkweg,Amsterdam,52.36484,4.88127
+223,Eric Vloeimans and J?rg Brinkmann,2025/4/12,VU Griffioen,Amsterdam,52.33469,4.86333
+224,Wakki,2025/4/12,De Nieuwe Anita,Amsterdam,52.37417,4.87269
+225,Fie Schouten and Katharina Gross,2025/4/13,Plein Theater,Amsterdam,52.36088,4.91395
+226,Dirk Scheele,2025/4/13,Zaantheater,Zaandam,52.43852,4.82511
+227,Catself,2025/4/13,Theatercaf¨¦ de Roode Remise,Amsterdam,52.38403,4.88389
+228,Euroboy (NL),2025/4/13,Volkshotel,Amsterdam,52.35371,4.91192
+229,Fat Dog,2025/4/14,Paradiso,Amsterdam,52.36228,4.88395
+230,Rosie Lowe,2025/4/14,Paradiso Kleine Zaal,Amsterdam,52.36228,4.88395
+231,"Rapha?l Pichon, Ensemble Pygmalion, and Julien Pr¨¦gardien",2025/4/14,Het Koninklijk Concertgebouw,Amsterdam,52.35597,4.87856
+232,P?ter (CANADA),2025/4/14,Toekomst Muziek,Amsterdam,52.32423,4.96059
+233,La Femme,2025/4/15,Paradiso,Amsterdam,52.36228,4.88395
+234,Squid,2025/4/15,Melkweg,Amsterdam,52.36484,4.88127
+235,Donell Jones,2025/4/15,AFAS Live,Amsterdam,52.31216,4.94467
+236,Billy Cobham,2025/4/15,Poppodium Q-Factory,Amsterdam,52.35762,4.9304
+237,Vincent Lima,2025/4/15,Paradiso,Amsterdam,52.36228,4.88395
+238,mxmtoon,2025/4/16,Melkweg OZ,Amsterdam,52.36484,4.88127
+239,Klyne,2025/4/16,Melkweg Upstairs,Amsterdam,52.36484,4.88127
+240,Alessi Rose,2025/4/16,Paradiso,Amsterdam,52.36228,4.88395
+241,Echt!,2025/4/17,Paradiso,Amsterdam,52.36228,4.88395
+242,Monolink,2025/4/18,Dgtl Festival,Amsterdam,52.37022,4.89517
+243,Jackson Dean,2025/4/18,Melkweg,Amsterdam,52.36484,4.88127
+244,Joe Sanders,2025/4/18,Bimhuis,Amsterdam,52.37815,4.91283
+245,Scarblade,2025/4/18,The Cave,Amsterdam,52.36441,4.88487
+246,DGTL Amsterdam 2025,2025/4/18,NDSM Docklands,Amsterdam,52.40108,4.8962
+247,DGTL Amsterdam 2025,2025/4/18,NDSM Docklands,Amsterdam,52.40108,4.8962
+248,KREAM,2025/4/19,Melkweg,Amsterdam,52.36484,4.88127
+249,Jools Holland & His Rhythm & Blues Orchestra,2025/4/19,Paradiso,Amsterdam,52.36228,4.88395
+250,Fejk¨¢,2025/4/19,Melkweg Max & Oz,Amsterdam,52.36493,4.8817
+251,Anneke van Giersbergen and orkest koninklijke luchtmacht,2025/4/19,Veluvine Nunspeet,Nunspeet,52.38307,5.78971
+252,Matt Dusk,2025/4/19,Poppodium Q-Factory,Amsterdam,52.35762,4.9304
+253,DGTL 2025,2025/4/19,Ndsm Scheepsbouwloods,Amsterdam,52.40129,4.89642
+254,Ora Cogan,2025/4/20,Cinetol,Amsterdam,52.35281,4.90657
+255,Katie Tupper,2025/4/20,Paradiso,Amsterdam,52.36228,4.88395
+256,LX187,2025/4/20,Amsterdam Centraal Station,Amsterdam,Unknown,Unknown
+257,Yildiz Tilbe,2025/4/21,AFAS Live,Amsterdam,52.31216,4.94467
+258,Josephine Odhil,2025/4/21,Paradiso,Amsterdam,52.36228,4.88395
+259,Usher,2025/4/22,Ziggo Dome,Amsterdam,52.31345,4.93719
+260,SHEPPARD,2025/4/22,Tolhuistuin,Amsterdam,52.38515,4.90023
+261,The Slow Readers Club,2025/4/22,Paradiso Grote Zaal,Amsterdam,52.36228,4.88395
+262,Tay Oskee,2025/4/22,Paradiso,Amsterdam,52.36228,4.88395
+263,Usher,2025/4/23,Ziggo Dome,Amsterdam,52.31345,4.93719
+264,Sugababes and Rose Gray,2025/4/23,AFAS Live,Amsterdam,52.31216,4.94467
+265,Chase Atlantic,2025/4/24,AFAS Live,Amsterdam,52.31216,4.94467
+266,Beatenberg,2025/4/24,"Paradiso Noord, Tolhuistuin",Amsterdam,52.38308,4.90303
+267,Yevgueni,2025/4/24,Paradiso Kleine Zaal,Amsterdam,52.36228,4.88395
+268,Halflives,2025/4/24,Melkweg at Lovelee,Amsterdam,52.36481,4.88183
+269,Usher,2025/4/25,Ziggo Dome,Amsterdam,52.31345,4.93719
+270,Tinlicker,2025/4/25,Paradiso,Amsterdam,52.36228,4.88395
+271,Gurriers,2025/4/25,Tolhuistuin IJzaal,Amsterdam,52.37022,4.89517
+272,POMMELIEN THIJS,2025/4/25,Paradiso Grote Zaal,Amsterdam,52.36228,4.88395
+273,Usher,2025/4/26,Ziggo Dome,Amsterdam,52.31345,4.93719
+274,"Klangkarussell, Super Flu, and Helsloot",2025/4/26,Hotel Arena,Amsterdam,52.36123,4.91633
+275,Mason,2025/4/26,Animal Language Kingsday,Amsterdam,Unknown,Unknown
+276,Maestro Jules,2025/4/26,Het Koninklijk Concertgebouw,Amsterdam,52.35597,4.87856
+277,Saskia Laroo and Saskia Laroo Band,2025/4/26,De Bullekerk,Zaandam,52.44456,4.81883
+278,Verknipt Kingsday 2025,2025/4/26,Taets Art & Event Park,Zaandam,52.42051,4.83132
+279,Usher,2025/4/28,Ziggo Dome,Amsterdam,52.31345,4.93719
+280,Chase Atlantic,2025/4/28,AFAS Live,Amsterdam,52.31216,4.94467
+281,Sarah Klang,2025/4/28,Bitterzoet,Amsterdam,52.3774,4.89422
+282,Kofi Stone,2025/4/29,Melkweg OZ,Amsterdam,52.36484,4.88127
+283,Motorpsycho,2025/4/29,"Paradiso Noord, Tolhuistuin",Amsterdam,52.38308,4.90303
+284,The Burning Hell,2025/4/29,De Nieuwe Anita,Amsterdam,52.37417,4.87269
+285,Twenty One Pilots,2025/4/30,Ziggo Dome,Amsterdam,52.31345,4.93719
+286,Stereophonics,2025/4/30,AFAS Live,Amsterdam,52.31216,4.94467
+287,B¨¹y¨¹k Ev Ablukada,2025/4/30,"Main Hall, Tolhuis",Amsterdam,52.38311,4.90486
+288,"Francisco, El Hombre",2025/4/30,Toekomstmuziek,Amsterdam,Unknown,Unknown
+289,AURORA,2025/5/1,Ziggo Dome,Amsterdam,52.31345,4.93719
+290,Cassia,2025/5/1,Tolhuistuin,Amsterdam,52.38515,4.90023
+291,Pavel Milyakov,2025/5/1,Garage Noord,Amsterdam,52.38557,4.92572
+292,Cochise,2025/5/2,Paradiso Tolhuistuin,Amsterdam,52.38308,4.90303
+293,Andromedik,2025/5/2,Melkweg,Amsterdam,52.36484,4.88127
+294,"Yves Berendse, Peter Beense, Wesly Bronkhorst, and Quincy",2025/5/2,AFAS Live,Amsterdam,52.31216,4.94467
+295,Malte Marten,2025/5/2,Dominicuskerk,Amsterdam,52.377,4.89335
+296,"Yves Berendse, Peter Beense, Wesly Bronkhorst, and Quincy",2025/5/3,AFAS Live,Amsterdam,52.31216,4.94467
+297,Alexandra Kay,2025/5/3,Bitterzoet,Amsterdam,52.3774,4.89422
+298,Eric Vloeimans and J?rg Brinkmann,2025/5/3,Theater Piet Mondriaan,Abcoude,52.27207,4.97047
+299,Billie Eilish and SAMI.C,2025/5/4,Ziggo Dome,Amsterdam,52.31345,4.93719
+300,Hadise,2025/5/4,AFAS Live,Amsterdam,52.31216,4.94467
+301,Inna,2025/5/5,AFAS Live,Amsterdam,52.31216,4.94467
+302,Swallow the Sun,2025/5/5,Melkweg,Amsterdam,52.36484,4.88127
+303,The Delines,2025/5/5,"Main Hall, Tolhuis",Amsterdam,52.38311,4.90486
+304,Q-Factory Bevrijdingsfestival 2025,2025/5/5,Poppodium Q-Factory,Amsterdam,52.35762,4.9304
+305,Billie Eilish,2025/5/6,Ziggo Dome,Amsterdam,52.31345,4.93719
+306,Robert Plant,2025/5/6,Koninklijk Theater Carr¨¦,Amsterdam,52.36238,4.90388
+307,Alfie Jukes,2025/5/6,Melkweg,Amsterdam,52.36484,4.88127
+308,Modern Biology,2025/5/6,Unknown,Amsterdam,52.37022,4.89517
+309,Billie Eilish,2025/5/7,Ziggo Dome,Amsterdam,52.31345,4.93719
+310,Judy Blank,2025/5/7,Paradiso,Amsterdam,52.36228,4.88395
+311,Ghost,2025/5/8,Ziggo Dome,Amsterdam,52.31345,4.93719
+312,Jamie Cullum,2025/5/8,Paradiso Grote Zaal,Amsterdam,52.36228,4.88395
+313,"Ann My Guard, Shireen, and Vaselyne",2025/5/8,Poppodium Q-Factory,Amsterdam,52.35762,4.9304
+314,Daniel Seavey,2025/5/9,Melkweg Max,Amsterdam,52.37022,4.89517
+315,Inhaler,2025/5/10,Ziggo Dome,Amsterdam,52.31345,4.93719
+316,Goose,2025/5/10,Melkweg,Amsterdam,52.36484,4.88127
+317,Eric Vloeimans and J?rg Brinkmann,2025/5/10,Theater City of Wesopa,Weesp,52.30887,5.03978
+318,Marlon Pichel,2025/5/10,Poppodium Q-Factory,Amsterdam,52.35762,4.9304
+319,ProtestFest 2025,2025/5/10,Paradiso,Amsterdam,52.36228,4.88395
+320,Music on Festival 2025,2025/5/11,Unknown,Amsterdam,52.37022,4.89517
+321,BABYMETAL,2025/5/13,Ziggo Dome,Amsterdam,52.31345,4.93719
+322,"The Swell Season, Glen Hansard, and Mark¨¦ta Irglov¨¢",2025/5/13,Koninklijk Theater Carr¨¦,Amsterdam,52.36238,4.90388
+323,Bonnie 'Prince' Billy,2025/5/13,Paradiso,Amsterdam,52.36228,4.88395
+324,Vraell,2025/5/13,Paradiso Tolhuistuin,Amsterdam,52.38308,4.90303
+325,"Tyler, The Creator",2025/5/14,Ziggo Dome,Amsterdam,52.31345,4.93719
+326,"Tyler, The Creator",2025/5/15,Ziggo Dome,Amsterdam,52.31345,4.93719
+327,Divorce (UK),2025/5/15,Bitterzoet,Amsterdam,52.3774,4.89422
+328,Rival Consoles,2025/5/16,Melkweg,Amsterdam,52.36484,4.88127
+329,Douwe Bob,2025/5/16,AFAS Live,Amsterdam,52.31216,4.94467
+330,§³§Ñ§Þ§à§Ö §Ò§à§Ý§î§ê§à§Ö §á§â§à§ã§ä§à§Ö §é§Ú§ã§Ý§à,2025/5/16,Bitterzoet,Amsterdam,52.3774,4.89422
+331,KUHN FU,2025/5/16,Bimhuis,Amsterdam,52.37815,4.91283
+332,Abba Gold,2025/5/16,Poppodium Q-Factory,Amsterdam,52.35762,4.9304
+333,"London Calling, Paradiso 2025",2025/5/16,Paradiso,Amsterdam,52.36228,4.88395
+334,London Calling Festival 2025,2025/5/16,Paradiso,Amsterdam,52.36228,4.88395
+335,Awakenings Upclose 2025 2025,2025/5/16,Unknown,Amsterdam,52.37022,4.89517
+336,The Lumineers and Michael Marcagi,2025/5/17,AFAS Live,Amsterdam,52.31216,4.94467
+337,Soccer Mommy,2025/5/17,London Calling Festival,Amsterdam,Unknown,Unknown
+338,Hilight Tribe,2025/5/17,Melkweg,Amsterdam,52.36484,4.88127
+339,Brothers Moving,2025/5/17,Melkweg,Amsterdam,52.36484,4.88127
+340,Eric Vloeimans and J?rg Brinkmann,2025/5/17,Theater De Omval,Diemen,52.342,4.96487
+341,Awakenings Upclose 2025,2025/5/17,Unknown,Amsterdam,52.37022,4.89517
+342,Osees,2025/5/18,Paradiso Grote Zaal,Amsterdam,52.36228,4.88395
+343,PUP,2025/5/18,Melkweg,Amsterdam,52.36484,4.88127
+344,Scott Bradlee's Postmodern Jukebox,2025/5/19,Paradiso Grote Zaal,Amsterdam,52.36228,4.88395
+345,Lael Neale,2025/5/19,DOKA,Amsterdam,52.35371,4.91192
+346,Boyce Avenue,2025/5/20,Melkweg OZ,Amsterdam,52.36484,4.88127
+347,Katell,2025/5/20,Zaantheater,Zaandam,52.43852,4.82511
+348,CATTmusic and Catt,2025/5/21,Paradiso,Amsterdam,52.36228,4.88395
+349,Steven Wilson,2025/5/22,AFAS Live,Amsterdam,52.31216,4.94467
+350,Vieux Farka Toure,2025/5/22,Melkweg,Amsterdam,52.36484,4.88127
+351,Steven Wilson,2025/5/22,AFAS Live,Amsterdam,52.31216,4.94467
+352,Vieux Farka Toure,2025/5/22,Melkweg,Amsterdam,52.36484,4.88127
+353,Abigail Lapell,2025/5/22,Melkweg,Amsterdam,52.36484,4.88127
+354,TV Moms,2025/5/22,The Cave,Amsterdam,52.36441,4.88487
+355,Mozart Requiem,2025/5/22,Het Koninklijk Concertgebouw,Amsterdam,52.35597,4.87856
+356,Dotan,2025/5/23,Paradiso,Amsterdam,52.36228,4.88395
+357,The Sugarhill Gang,2025/5/23,Poppodium Q-Factory,Amsterdam,52.35762,4.9304
+358,Make Them Suffer,2025/5/23,Melkweg,Amsterdam,52.36484,4.88127
+359,Pieter de Graaf,2025/5/23,Vondelkerk Amsterdam,Amsterdam,52.3613,4.87375
+360,The Dutch,2025/5/23,deMess,Naarden,52.29468,5.16482
+361,Astels,2025/5/23,Paradiso,Amsterdam,52.36228,4.88395
+362,Alabaster DePlume,2025/5/24,Zonnehuis,Amsterdam,52.41341,4.89126
+363,Ibrahim Tatlises,2025/5/24,Rai Amsterdam,Amsterdam,52.34322,4.89128
+364,Enji,2025/5/24,Bimhuis,Amsterdam,52.37815,4.91283
+365,Senyor Oca,2025/5/24,OT301,Amsterdam,52.36014,4.86571
+366,Question Mark,2025/5/24,Rock Club The Cave,Amsterdam,52.36441,4.88486
+367,The Wieners,2025/5/24,Unknown,Putten,52.25868,5.60537
+368,Fiddler's Green,2025/5/25,Poppodium Q-Factory,Amsterdam,52.35762,4.9304
+369,Morgan Jay,2025/5/25,Theater Amsterdam,Amsterdam,52.39702,4.87724
+370,Morgan Jay,2025/5/25,Theater Amsterdam,Amsterdam,52.39702,4.87724
+371,"Nelly, Fabolous, Jermaine Dupri, and St. Lunatics",2025/5/26,Ziggo Dome,Amsterdam,52.31345,4.93719
+372,Don Toliver,2025/5/26,AFAS Live,Amsterdam,52.31216,4.94467
+373,"I'm With Her, Sarah Jarosz, Aoife O'Donovan, and Sara Watkins",2025/5/26,Paradiso,Amsterdam,52.36228,4.88395
+374,Freak Slug,2025/5/26,Cinetol,Amsterdam,52.35281,4.90657
+375,Patrick Wolf,2025/5/27,Tolhuistuin,Amsterdam,52.38515,4.90023
+376,Tyler Hilton,2025/5/27,Bitterzoet,Amsterdam,52.3774,4.89422
+377,Tate McRae,2025/5/28,Ziggo Dome,Amsterdam,52.31345,4.93719
+378,daste.,2025/5/28,"Paradiso, upstairs",Amsterdam,Unknown,Unknown
+379,Mozart Requiem,2025/5/28,Het Koninklijk Concertgebouw,Amsterdam,52.35597,4.87856
+380,Jenny Hval,2025/5/30,Muziekgebouw,Amsterdam,52.37835,4.91311
+381,puntjudith,2025/5/30,OT301,Amsterdam,52.36014,4.86571
+382,Stereolab,2025/5/31,Paradiso,Amsterdam,52.36228,4.88395
+383,S?la,2025/5/31,Rai Amsterdam,Amsterdam,52.34322,4.89128
+384,Wunderhorse,2025/6/1,Paradiso,Amsterdam,52.36228,4.88395
+385,The Get Up Kids,2025/6/1,Melkweg,Amsterdam,52.36484,4.88127
+386,Fatma Turgut,2025/6/1,AFAS Live,Amsterdam,52.31216,4.94467
+387,Philipp R¨¹ttgers,2025/6/1,Jazz Inverdan - Doopsgezinde Vermaning,Zaandam,Unknown,Unknown
+388,Pete Philly & Perquisite,2025/6/2,De Kleine Komedie,Amsterdam,52.36695,4.8958
+389,Dua Lipa,2025/6/3,Ziggo Dome,Amsterdam,52.31345,4.93719
+390,GIMS,2025/6/3,AFAS Live,Amsterdam,52.31216,4.94467
+391,Puma Blue,2025/6/3,Bitterzoet,Amsterdam,52.3774,4.89422
+392,Dua Lipa,2025/6/4,Ziggo Dome,Amsterdam,52.31345,4.93719
+393,Music of Simon & Garfunkel,2025/6/5,Het Koninklijk Concertgebouw,Amsterdam,52.35597,4.87856
+394,Heathen Apostles,2025/6/5,Teatro Munganga,Amsterdam,52.35436,4.85399
+395,Gotu Jim,2025/6/6,Paradiso,Amsterdam,52.36228,4.88395
+396,Arrows In Action,2025/6/7,Melkweg,Amsterdam,52.36484,4.88127
+397,Outdoor,2025/6/7,komm schon Alter Festival,Amsterdam,Unknown,Unknown
+398,Komm schon Alter - das Festival 2025,2025/6/7,Tuinen van West,Amsterdam,52.38331,4.78014
+399,Lente Kabinet 2025,2025/6/7,Unknown,Oostzaan,52.4405,4.87572
+400,Morgan Jay,2025/6/8,Theater Amsterdam,Amsterdam,52.39702,4.87724
+401,Morgan Jay,2025/6/8,Theater Amsterdam,Amsterdam,52.39702,4.87724
+402,Snowapple,2025/6/10,Paradiso,Amsterdam,52.36228,4.88395
+403,Duran Duran,2025/6/11,Ziggo Dome,Amsterdam,52.31345,4.93719
+404,Impact Night,2025/6/11,AFAS Live,Amsterdam,52.31216,4.94467
+405,Basia Bulat,2025/6/13,Paradiso,Amsterdam,52.36228,4.88395
+406,Mallrat,2025/6/14,Paradiso,Amsterdam,52.36228,4.88395
+407,"The Bad Plus, Reid Anderson, Dave King, Ben Monder, and Chris Speed",2025/6/14,Bimhuis,Amsterdam,52.37815,4.91283
+408,Abel Selaocoe and Ensemble Resonanz,2025/6/14,Het Koninklijk Concertgebouw,Amsterdam,52.35597,4.87856
+409,Spiral Drive,2025/6/14,Poppodium Q-Factory,Amsterdam,52.35762,4.9304
+410,V.O.F. de Kunst,2025/6/14,Poppodium Q-Factory,Amsterdam,52.35762,4.9304
+411,Ruud Houweling,2025/6/14,Theater De Roode Bioscoop,Amsterdam,52.38411,4.88396
+412,Pitbull and Shaggy,2025/6/15,Ziggo Dome,Amsterdam,52.31345,4.93719
+413,Lucy Dacus,2025/6/16,Paradiso,Amsterdam,52.36228,4.88395
+414,Stephen Wilson Jr.,2025/6/16,Paradiso,Amsterdam,52.36228,4.88395
+415,R?F?S DU SOL and Weval,2025/6/17,AFAS Live,Amsterdam,52.31216,4.94467
+416,R?F?S DU SOL and Weval,2025/6/18,AFAS Live,Amsterdam,52.31216,4.94467
+417,Lionel Richie,2025/6/19,Ziggo Dome,Amsterdam,52.31345,4.93719
+418,Morrissey,2025/6/19,AFAS Live,Amsterdam,52.31216,4.94467
+419,Jerry Cantrell,2025/6/19,Melkweg,Amsterdam,52.36484,4.88127
+420,Great Gable,2025/6/19,Bitterzoet,Amsterdam,52.3774,4.89422
+421,Rauw Alejandro,2025/6/20,Ziggo Dome,Amsterdam,52.31345,4.93719
+422,The Hard Quartet,2025/6/20,Paradiso,Amsterdam,52.36228,4.88395
+423,The New Conrad Miller Trio,2025/6/20,Teatro Munganga,Amsterdam,52.35436,4.85399
+424,Molotov,2025/6/21,Melkweg,Amsterdam,52.36484,4.88127
+425,Outdoor,2025/6/22,Johan Cruijff ArenA,Amsterdam,52.31301,4.94214
+426,Robbie Williams Live 2025,2025/6/22,Unknown,Amsterdam,52.37022,4.89517
+427,Outdoor,2025/6/23,Johan Cruijff ArenA,Amsterdam,52.31301,4.94214
+428,Joe Satriani and Steve Vai,2025/6/23,AFAS Live,Amsterdam,52.31216,4.94467
+429,John Fogerty,2025/6/23,Ziggo Dome,Amsterdam,52.31345,4.93719
+430,Santana,2025/6/24,Ziggo Dome,Amsterdam,52.31345,4.93719
+431,Outdoor,2025/6/24,TBA - Amsterdam,Amsterdam,Unknown,Unknown
+432,Alanis Morissette,2025/6/25,Ziggo Dome,Amsterdam,52.31345,4.93719
+433,Lee Rocker,2025/6/25,Poppodium Q-Factory,Amsterdam,52.35762,4.9304
+434,Cassius Jane,2025/6/25,Theater Amsterdam,Amsterdam,52.39702,4.87724
+435,The Maccabees,2025/6/26,Paradiso,Amsterdam,52.36228,4.88395
+436,Yves Berendse,2025/6/27,Ziggo Dome,Amsterdam,52.31345,4.93719
+437,Yves Berendse,2025/6/28,Ziggo Dome,Amsterdam,52.31345,4.93719
+438,Jennie Lena,2025/6/28,Poppodium Q-Factory,Amsterdam,52.35762,4.9304
+439,Nine Inch Nails,2025/6/29,Ziggo Dome,Amsterdam,52.31345,4.93719
+440,Camila Cabello,2025/7/1,AFAS Live,Amsterdam,52.31216,4.94467
+441,Green Day,2025/7/2,Ziggo Dome,Amsterdam,52.31345,4.93719
+442,Kylie Minogue,2025/7/3,Ziggo Dome,Amsterdam,52.31345,4.93719
+443,Shaun Banks,2025/7/3,Parlour,Amsterdam,52.35054,4.89079
+444,Ginton,2025/7/5,"Kleine Zaal, Concertgebouw Amsterdam",Amsterdam,52.35588,4.87903
+445,Blowbeat,2025/7/5,Poppodium Q-Factory,Amsterdam,52.35762,4.9304
+446,Tom Jones,2025/7/8,Ziggo Dome,Amsterdam,52.31345,4.93719
+447,Outdoor,2025/7/9,Johan Cruijff ArenA,Amsterdam,52.31301,4.94214
+448,Yeule,2025/7/9,Melkweg,Amsterdam,52.36484,4.88127
+449,Outdoor,2025/7/11,Johan Cruijff ArenA,Amsterdam,52.31301,4.94214
+450,De Amsterdamse Zomer 2025,2025/7/11,Olympic Stadium / Olympisch Stadion,Amsterdam,52.34301,4.85433
+451,Anthony Lazaro,2025/7/18,Zonnehuis,Amsterdam,52.41341,4.89126
+452,Haltpop 2025,2025/7/19,Haltpop,Koog Aan de Zaan,52.46728,4.80167
+453,Alice Cooper,2025/7/28,AFAS Live,Amsterdam,52.31216,4.94467
+454,Wine Lips,2025/7/28,Melkweg,Amsterdam,52.36484,4.88127
+455,Dekmantel festival 2025,2025/7/30,Unknown,Amsterdam,52.37022,4.89517
+456,The Pekkers,2025/8/5,Unknown,Amsterdam,52.37022,4.89517
+457,Autechre,2025/8/6,Melkweg,Amsterdam,52.36484,4.88127
+458,John Digweed,2025/8/9,Loveland,Amsterdam,52.37022,4.89517
+459,Loveland Festival 2025,2025/8/9,Sloterpark,Amsterdam,52.37109,4.81674
+460,Mysteryland 2025,2025/8/22,Haarlemmermeer,Amsterdam,Unknown,Unknown
+461,DJ Gigola,2025/8/30,Zeezout,Amsterdam,Unknown,Unknown
+462,Midland (US),2025/8/30,Paradiso,Amsterdam,52.36228,4.88395
+463,Jazz In Aartswoud 2025,2025/8/30,Jazzkerk Aartswoud,Aartswoud,52.74363,4.94907
+464,Anouk,2025/9/2,Ziggo Dome,Amsterdam,52.31345,4.93719
+465,Anouk,2025/9/4,Ziggo Dome,Amsterdam,52.31345,4.93719
+466,Toontje Lager,2025/9/12,Poppodium Q-Factory,Amsterdam,52.35762,4.9304
+467,Heaven 17,2025/9/13,Poppodium Q-Factory,Amsterdam,52.35762,4.9304
+468,Multigroove 2025,2025/9/13,Unknown,Amsterdam,52.37022,4.89517
+469,Damiano David,2025/9/15,AFAS Live,Amsterdam,52.31216,4.94467
+470,Blondshell,2025/9/18,"Paradiso Noord, Tolhuistuin",Amsterdam,52.38308,4.90303
+471,Lil Baby,2025/9/19,AFAS Live,Amsterdam,52.31216,4.94467
+472,Cho,2025/9/20,Ziggo Dome,Amsterdam,52.31345,4.93719
+473,Aynur Dogan,2025/9/23,"Grote Zaal, Concertgebouw Amsterdam",Amsterdam,52.35588,4.87903
+474,Compact Disk Dummies,2025/9/24,Tolhuistuin,Amsterdam,52.38515,4.90023
+475,Dan Patlansky,2025/9/24,Poppodium Q-Factory,Amsterdam,52.35762,4.9304
+476,Eiv?r,2025/9/25,Paradiso Grote Zaal,Amsterdam,52.36228,4.88395
+477,Kevin Kaarl,2025/9/25,Melkweg,Amsterdam,52.36484,4.88127
+478,HVOB,2025/9/26,Melkweg,Amsterdam,52.36484,4.88127
+479,Parcels - Live 2025,2025/9/26,Ziggo Dome,Amsterdam,52.31345,4.93719
+480,Mason,2025/9/27,Animal Language Kafe Rave,Amsterdam,Unknown,Unknown
+481,Queen Must Go On,2025/9/27,Ziggo Dome,Amsterdam,52.31345,4.93719
+482,SilverDeep,2025/9/27,Escape,Amsterdam,52.36643,4.89635
+483,OneRepublic,2025/9/28,Ziggo Dome,Amsterdam,52.31345,4.93719
+484,"Pierce the Veil, Cavetown, Hot Mulligan, and The Crawlers",2025/9/29,AFAS Live,Amsterdam,52.31216,4.94467
+485,"Parkway Drive, Thy Art Is Murder, and The Amity Affliction",2025/9/30,Ziggo Dome,Amsterdam,52.31345,4.93719
+486,Jason Mraz,2025/10/1,Paradiso,Amsterdam,52.36228,4.88395
+487,Diana Krall,2025/10/1,Koninklijk Theater Carr¨¦,Amsterdam,52.36238,4.90388
+488,Casey McQuillen,2025/10/1,Splendor,Amsterdam,52.3699,4.90318
+489,De Jeugd Van Tegenwoordig,2025/10/2,Ziggo Dome,Amsterdam,52.31345,4.93719
+490,Floor Jansen,2025/10/2,Koninklijk Theater Carr¨¦,Amsterdam,52.36238,4.90388
+491,Ajeet,2025/10/2,Salon Ruigoord,Amsterdam,52.4102,4.74955
+492,De Jeugd Van Tegenwoordig,2025/10/3,Ziggo Dome,Amsterdam,52.31345,4.93719
+493,Ben L'Oncle Soul,2025/10/3,AFAS Live,Amsterdam,52.31216,4.94467
+494,Ajeet,2025/10/3,Dominicuskerk,Amsterdam,52.377,4.89335
+495,De Jeugd Van Tegenwoordig,2025/10/4,Ziggo Dome,Amsterdam,52.31345,4.93719
+496,Ajeet,2025/10/4,Dominicuskerk,Amsterdam,52.377,4.89335
+497,Sigur R¨®s,2025/10/5,Koninklijk Theater Carr¨¦,Amsterdam,52.36238,4.90388
+498,Hooverphonic,2025/10/5,Paradiso,Amsterdam,52.36228,4.88395
+499,Sigur R¨®s,2025/10/6,Koninklijk Theater Carr¨¦,Amsterdam,52.36238,4.90388
+500,Sigur R¨®s,2025/10/7,Koninklijk Theater Carr¨¦,Amsterdam,52.36238,4.90388
+501,The Cat Empire,2025/10/7,Paradiso,Amsterdam,52.36228,4.88395
+502,Charli Jordan Chamberlain,2025/10/9,Paradiso,Amsterdam,52.36228,4.88395
+503,The Inspector Cluzo,2025/10/10,Melkweg,Amsterdam,52.36484,4.88127
+504,Starsailor,2025/10/11,Melkweg,Amsterdam,52.36484,4.88127
+505,"Black Country, New Road",2025/10/12,Paradiso,Amsterdam,52.36228,4.88395
+506,Bombino,2025/10/12,Melkweg,Amsterdam,52.36484,4.88127
+507,Brit Floyd,2025/10/12,AFAS Live,Amsterdam,52.31216,4.94467
+508,"Black Country, New Road",2025/10/13,Paradiso,Amsterdam,52.36228,4.88395
+509,Disturbed and Megadeth,2025/10/14,Ziggo Dome,Amsterdam,52.31345,4.93719
+510,Gregory Alan Isakov,2025/10/15,Paradiso,Amsterdam,52.36228,4.88395
+511,Ollie,2025/10/15,Melkweg,Amsterdam,52.36484,4.88127
+512,Gregory Alan Isakov,2025/10/16,Paradiso,Amsterdam,52.36228,4.88395
+513,Gregory Alan Isakov,2025/10/17,Paradiso,Amsterdam,52.36228,4.88395
+514,MEAU,2025/10/17,AFAS Live,Amsterdam,52.31216,4.94467
+515,Symphonica in Rosso,2025/10/17,Ziggo Dome,Amsterdam,52.31345,4.93719
+516,Dotan,2025/10/18,AFAS Live,Amsterdam,52.31216,4.94467
+517,Symphonica in Rosso,2025/10/18,Ziggo Dome,Amsterdam,52.31345,4.93719
+518,"Arch Enemy, Amorphis, Eluveitie, and Gatecreeper",2025/10/28,AFAS Live,Amsterdam,52.31216,4.94467
+519,Xavier Rudd,2025/10/30,AFAS Live,Amsterdam,52.31216,4.94467
+520,Till Lindemann,2025/10/31,Ziggo Dome,Amsterdam,52.31345,4.93719
+521,Eskorzo,2025/11/5,Paradiso Kleine Zaal,Amsterdam,52.36228,4.88395
+522,The Offspring,2025/11/7,Ziggo Dome,Amsterdam,52.31345,4.93719
+523,Hauser,2025/11/8,Ziggo Dome,Amsterdam,52.31345,4.93719
+524,Patrick Watson,2025/11/12,Koninklijk Theater Carr¨¦,Amsterdam,52.36238,4.90388
+525,Simply Red,2025/11/14,Ziggo Dome,Amsterdam,52.31345,4.93719
+526,Simply Red,2025/11/15,Ziggo Dome,Amsterdam,52.31345,4.93719
+527,Neal Francis,2025/11/15,Tolhuistuin,Amsterdam,52.38515,4.90023
+528,crazy little things,2025/11/15,Poppodium Q-Factory,Amsterdam,52.35762,4.9304
+529,Simply Red,2025/11/16,Ziggo Dome,Amsterdam,52.31345,4.93719
+530,Oklou,2025/11/19,Melkweg,Amsterdam,52.36484,4.88127
+531,Het Grote Songfestivalfeest 2025,2025/11/20,Ziggo Dome,Amsterdam,52.31345,4.93719
+532,Avond van De Filmmuziek 2025,2025/11/23,Ziggo Dome,Amsterdam,52.31345,4.93719
+533,Sam Garrett,2025/11/24,Paradiso,Amsterdam,52.36228,4.88395
+534,Jamiroquai,2025/11/25,Ziggo Dome,Amsterdam,52.31345,4.93719
+535,Sabaton,2025/12/1,Ziggo Dome,Amsterdam,52.31345,4.93719
+536,"Louis Cole, Metropole Orkest, and Jules Buckley",2025/12/1,Het Koninklijk Concertgebouw,Amsterdam,52.35597,4.87856
+537,Chuck Prophet,2025/12/1,Bitterzoet,Amsterdam,52.3774,4.89422
+538,Kensington,2025/12/3,Ziggo Dome,Amsterdam,52.31345,4.93719
+539,Kensington,2025/12/4,Ziggo Dome,Amsterdam,52.31345,4.93719
+540,Kensington,2025/12/5,Ziggo Dome,Amsterdam,52.31345,4.93719
+541,Krezip,2025/12/6,Ziggo Dome,Amsterdam,52.31345,4.93719
+542,Big Time Rush,2025/12/8,Ziggo Dome,Amsterdam,52.31345,4.93719
+543,"Big Time Rush, Stephen Kramer Glickman, and Katelyn Tarver",2025/12/9,Ziggo Dome,Amsterdam,52.31345,4.93719
+544,Son Mieux,2025/12/12,Paradiso,Amsterdam,52.36228,4.88395
+545,Son Mieux,2025/12/13,Paradiso,Amsterdam,52.36228,4.88395
+546,Jonna Fraser,2025/12/18,Ziggo Dome,Amsterdam,52.31345,4.93719
+547,Jamai,2025/12/27,Ziggo Dome,Amsterdam,52.31345,4.93719
+548,Jamai,2025/12/27,Ziggo Dome,Amsterdam,52.31345,4.93719
+549,Jamai,2025/12/27,Ziggo Dome,Amsterdam,52.31345,4.93719
