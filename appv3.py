@@ -4,7 +4,9 @@ from shapely import wkt
 import geopandas as gpd
 import folium
 from streamlit_folium import folium_static
-from streamlit_float import float_init, float_parent  # 确保安装 1.2.0+ 版本
+from streamlit_float import float_init, float_parent
+
+#这个版本想要做好看的悬浮窗口但是失败，若想排错请随意
 
 # 配置页面（必须第一个命令）
 st.set_page_config(layout="wide")
