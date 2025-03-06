@@ -4,3 +4,6 @@ folium
 pandas
 shapely
 streamlit_folium
+streamlit_float
+plotly
+pydeck
