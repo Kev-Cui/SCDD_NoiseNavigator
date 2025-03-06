@@ -1,0 +1,6 @@
+streamlit
+geopandas
+folium
+pandas
+shapely
+streamlit_folium
