@@ -8,13 +8,11 @@ from streamlit_float import float_init, float_parent
 
 #这个版本想要做好看的悬浮窗口但是失败，若想排错请随意
 
-# 配置页面（必须第一个命令）
+
 st.set_page_config(layout="wide")
 
-# 初始化浮动容器
-float_init()
+float_init() #initialize float container
 
-# 设置全局样式
 st.markdown("""
 <style>
     /* 主容器样式 */
@@ -22,7 +20,6 @@ st.markdown("""
         padding: 0 !important;
     }
     
-    /* 浮动控制面板样式 */
     .floating-panel {
         position: fixed !important;
         top: 20px !important;
@@ -37,10 +34,9 @@ st.markdown("""
         overflow-y: auto;
     }
     
-    /* 地图容器样式 */
     .map-container {
         position: absolute !important;
-        left: 340px !important;  /* 控制面板宽度 + 边距 */
+        left: 340px !important; 
         right: 20px !important;
         top: 20px !important;
         bottom: 20px !important;
@@ -49,7 +45,7 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-# 数据加载函数（保持原样）
+# Load Data Functions
 @st.cache_data
 def load_noise_data():
     noise_df = pd.read_csv('data/cleaned/noise_map.csv')
@@ -68,19 +64,19 @@ def load_concert_data():
     concert_df[['Latitude', 'Longitude']] = concert_df[['Latitude', 'Longitude']].apply(pd.to_numeric, errors='coerce')
     return concert_df.dropna(subset=['Latitude', 'Longitude'])
 
-# 加载数据
+# Load Data
 noise_gdf = load_noise_data()
 concert_df = load_concert_data()
 
 control_container = st.container()
 with control_container:
-    st.header("控制面板")
-    selected_types = st.multiselect("噪声类型", options=noise_gdf['Type'].unique())
-    selected_periods = st.multiselect("时段", options=noise_gdf['Day_Night_period'].unique())
-    selected_legends = st.multiselect("图例分类", options=noise_gdf['legend'].unique())
-    concert_date = st.date_input("选择日期", min_value=concert_df['Date'].min().date())
+    st.header("Control Board")
+    selected_types = st.multiselect("Noise Source", options=noise_gdf['Type'].unique())
+    selected_periods = st.multiselect("Time Period", options=noise_gdf['Day_Night_period'].unique())
+    selected_legends = st.multiselect("Legend", options=noise_gdf['legend'].unique())
+    concert_date = st.date_input("Date", min_value=concert_df['Date'].min().date())
 
-# 数据过滤（保持原样）
+# Data Filtering
 noise_filter = noise_gdf[
     (noise_gdf['Type'].isin(selected_types)) &
     (noise_gdf['Day_Night_period'].isin(selected_periods)) &
@@ -88,7 +84,7 @@ noise_filter = noise_gdf[
 ]
 concert_filter = concert_df[concert_df['Date'].dt.date == concert_date]
 
-# 创建地图容器
+# Map Container to separate it from Floating Container
 with st.container():
     st.markdown('<div class="map-container">', unsafe_allow_html=True)
     m = folium.Map(
@@ -98,7 +94,7 @@ with st.container():
         control_scale=True
     )
     
-    # 添加地图元素（保持原样）
+    # Map elements
     for _, row in noise_filter.iterrows():
         folium.GeoJson(
             row['geometry'],
@@ -107,7 +103,7 @@ with st.container():
                 'weight': 1.5,
                 'fillOpacity': 0.3
             },
-            tooltip=f"类型: {row['Type']}<br>时段: {row['Day_Night_period']}"
+            tooltip=f"Type: {row['Type']}<br>Time: {row['Day_Night_period']}"
         ).add_to(m)
     
     for _, event in concert_filter.iterrows():
@@ -122,7 +118,7 @@ with st.container():
     folium_static(m)
     st.markdown('</div>', unsafe_allow_html=True)
 
-# ✅ 正确调用位置（在容器外部绑定浮动样式）
+# Float Container's css
 float_css = """
 position: fixed;
 top: 20px;
@@ -136,4 +132,4 @@ box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 z-index: 9999;
 overflow-y: auto;
 """
-float_parent(css=float_css)
+float_parent(css=float_css) # something must be wrong with this line
