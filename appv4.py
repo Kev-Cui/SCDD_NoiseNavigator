@@ -1,11 +1,8 @@
 import streamlit as st
 import pandas as pd
-import geopandas as gpd
 import folium
-from datetime import datetime, timedelta, date
+from datetime import timedelta, date
 from streamlit_folium import folium_static
-from shapely import wkt
-import geopandas as gpd
 import plotly.express as px
 from data_loader import load_noise_data, load_concert_data, load_construction_data
 
@@ -25,7 +22,7 @@ st.markdown("""
     grid-template-columns: 300px 1fr 300px;
     grid-template-rows: 500px 500px;
     gap: 10px;
-    height: 100vh;
+    height: 80vh;
     max-width: 1920px;
 }
 
@@ -89,6 +86,7 @@ def main_layout():
             label_visibility="collapsed"
         )
 
+        st.markdown("---")
 
         st.markdown("**Noise Levels**")
         
@@ -113,7 +111,7 @@ def main_layout():
                         key=f"noise_level_{level}"
                     ):
                         selected_levels.append(level)
-
+        st.markdown("---")
         # Noise source selection
         st.markdown("**Noise Sources**")
         noise_sources = st.multiselect(
@@ -124,8 +122,8 @@ def main_layout():
         )
         
         # Visibility toggles
-        show_concerts = st.checkbox("🎤 Show Concerts", value=True, key="show_concerts")
-        show_constructions = st.checkbox("🚧 Show Constructions", value=True, key="show_constructions")
+        show_concerts = st.checkbox("Show Concerts", value=True, key="show_concerts")
+        show_constructions = st.checkbox("Show Constructions", value=True, key="show_constructions")
 
         st.markdown('</div>', unsafe_allow_html=True)
 
@@ -225,17 +223,17 @@ def main_layout():
                     ).add_to(m)
                     
                     # Center marker
-                    folium.Marker(
-                        location=[row['center'].y, row['center'].x],
-                        icon=folium.Icon(
-                            color='lightgray' if time_mode == 'night' else 'white',
-                            icon_color=CONSTRUCTION_COLOR['icon'],
-                            icon='wrench',
-                            prefix='fa'
-                        ),
-                        popup=f"<b>{row['Project_Abbreviation']}</b><br>"
-                            f"Start Date: {row['Planned_Construction_Start'].strftime('%Y-%m-%d')}"
-                    ).add_to(m)
+                    # folium.Marker(
+                    #     location=[row['center'].y, row['center'].x],
+                    #     icon=folium.Icon(
+                    #         color='F7F9FC' if time_mode == 'night' else 'white',
+                    #         icon_color=CONSTRUCTION_COLOR['icon'],
+                    #         icon='wrench',
+                    #         prefix='fa'
+                    #     ),
+                    #     popup=f"<b>{row['Project_Abbreviation']}</b><br>"
+                    #         f"Start Date: {row['Planned_Construction_Start'].strftime('%Y-%m-%d')}"
+                    # ).add_to(m)
             
             return m
         st.markdown('<div id="main-map" class="dashboard-box">', unsafe_allow_html=True)
@@ -277,33 +275,30 @@ def main_layout():
         )
         st.markdown('</div>', unsafe_allow_html=True)
         
-        st.markdown("*Concerts in Next 7 Days*")
+        st.markdown("**Concerts in Next 7 Days**")
         st.plotly_chart(fig, use_container_width=True)
 
         st.markdown('<div id="bottom-right" class="dashboard-box">', unsafe_allow_html=True)
-        st.markdown("*Data Source*")
-        # Initialize session state for info display
-        if 'show_info' not in st.session_state:
-            st.session_state.show_info = False
+        st.markdown("**Data Source**")
+        with st.popover("ℹ️ Info"):
+            st.write("""
+            ### Data Sources
 
-        # Create question mark button and data source line
-        col_info, col_btn = st.columns([4, 1])
-        with col_info:
-            st.markdown("**Data Source:** City Events Database 2025")
-        with col_btn:
-            if st.button("❓", help="Click for data source info"):
-                st.session_state.show_info = not st.session_state.show_info
+            **Amsterdam Concert Plan Data (Songkick)**  
+            - **Source:** [Songkick Metro Area - Amsterdam](https://www.songkick.com/metro-areas/31366-netherlands-amsterdam)  
+            - **Description:** This dataset was scraped from Songkick and provides up-to-date information on concerts and music events in Amsterdam, including details on venues and event dates.
 
-        # Display markdown content when button is clicked
-        if st.session_state.show_info:
-            st.markdown("""
-            ​**ℹ️ Data Source Information**  
-            - ​**Database Version**: v2.3.1  
-            - ​**Update Frequency**: Daily at 03:00 UTC  
-            - ​**Coverage**: 95% of public events  
-            - ​**License**: [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)  
-            - ​**API Documentation**: [View Docs](#)  
-            *Last Updated: 2025-03-26*  
+            **Amsterdam Noise Map Data**  
+            - **Source:** [Amsterdam Open Geodata](https://maps.amsterdam.nl/open_geodata/?k=492)  
+            - **Description:** Publicly available noise mapping data provided by the Municipality of Amsterdam. This dataset is used to monitor and visualize noise levels across the city, supporting urban noise management initiatives.
+
+            **Amsterdam Noise Zones Data**  
+            - **Source:** [Amsterdam API - Geluidszones](https://api.data.amsterdam.nl/v1/docs/datasets/geluidszones.html)  
+            - **Description:** Data from the Amsterdam API that delineates different noise zones within the city. It helps in categorizing areas based on noise levels and is useful for both regulatory purposes and urban planning.
+
+            **Amsterdam Construction Plans**  
+            - **Source:** [Amsterdam API - Nieuwbouwplannen](https://api.data.amsterdam.nl/v1/docs/datasets/nieuwbouwplannen.html)  
+            - **Description:** This dataset, also from the Amsterdam API, contains information on new construction projects throughout the city. It provides insights into planned urban developments which may affect noise levels and city infrastructure.
             """)
         
         # Show recent concerts
