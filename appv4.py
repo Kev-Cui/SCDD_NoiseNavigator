@@ -6,6 +6,7 @@ from datetime import datetime
 from streamlit_folium import folium_static
 from shapely import wkt
 import geopandas as gpd
+from data_loader import load_noise_data, load_concert_data, load_construction_data
 
 # Initialize page configuration
 st.set_page_config(
@@ -63,55 +64,6 @@ NOISE_LEVEL_MAPPING = {
     11: 'Mild <50dB', 12: 'Noisy 50-55dB', 13: 'Loud 55-60dB',
     14: 'Louder 60-65dB', 15: 'Very Loud 65-70dB', 16: 'Extremely Loud >70dB'
 }
-
-# Data loading
-@st.cache_data
-def load_noise_data():
-    noise_df = pd.read_csv('data/cleaned/noise_map.csv')
-    noise_df = noise_df.rename(columns={
-        'Day/Night period': 'period',
-        'Type': 'source_type'
-    })
-    noise_df['period'] = noise_df['period'].str.lower()
-    noise_df['geometry'] = noise_df['WKT_LNG_LAT'].apply(wkt.loads)
-    return gpd.GeoDataFrame(noise_df, geometry='geometry').set_crs(epsg=4326)
-
-@st.cache_data
-def load_concert_data():
-    try:
-        concert_df = pd.read_csv('data/cleaned/concert_plan.csv', encoding='utf-8')
-    except UnicodeDecodeError:
-        concert_df = pd.read_csv('data/cleaned/concert_plan.csv', encoding='latin1')
-    concert_df.replace('Unknown', pd.NA, inplace=True)
-    concert_df['Date'] = pd.to_datetime(concert_df['Date'])
-    concert_df[['Latitude', 'Longitude']] = concert_df[['Latitude', 'Longitude']].apply(pd.to_numeric, errors='coerce')
-    return concert_df.dropna(subset=['Latitude', 'Longitude'])
-
-@st.cache_data
-def load_construction_data():
-    # Load data with proper coordinate system handling
-    construction_df = pd.read_csv('data/cleaned/construction_plan.csv')
-    
-    # Convert WKT to geometry with original CRS
-    construction_df['Geometry'] = construction_df['Geometry'].apply(wkt.loads)
-    construction_gdf = gpd.GeoDataFrame(
-        construction_df,
-        geometry='Geometry',
-        crs="EPSG:28992"  # Set original CRS first
-    )
-    
-    # Transform to WGS84 (EPSG:4326)
-    construction_gdf = construction_gdf.to_crs(epsg=4326)
-    
-    # Calculate centroids AFTER transformation
-    construction_gdf['center'] = construction_gdf['Geometry'].centroid
-    
-    # Parse dates
-    construction_gdf['Planned_Construction_Start'] = pd.to_datetime(
-        construction_gdf['Planned_Construction_Start']
-    )
-    
-    return construction_gdf
 
 def create_custom_map(time_mode, selected_levels, concert_date, show_concerts, show_constructions):
     # Load data with caching
@@ -333,12 +285,12 @@ def main_layout():
         # Show recent concerts
         recent_concerts = concert_df.sort_values('Date', ascending=False).head(3)
         for _, row in recent_concerts.iterrows():
-            st.write(f"🎵 {row['Event']} on {row['Date'].date()}")
+            st.write(f"🎵 {row['Venue']} on {row['Date'].date()}")
         
         # Show upcoming constructions
         upcoming_constructions = construction_gdf.sort_values('Planned_Construction_Start').head(3)
         for _, row in upcoming_constructions.iterrows():
-            st.write(f"🏗️ {row['Project_Name']} starts {row['Planned_Construction_Start'].date()}")
+            st.write(f"🏗️ {row['Project_Abbreviation']} starts {row['Planned_Construction_Start'].date()}")
         
         st.markdown('</div>', unsafe_allow_html=True)
 
