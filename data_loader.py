@@ -1,6 +1,7 @@
 import pandas as pd
 import geopandas as gpd
 from shapely import wkt
+from shapely.geometry import Polygon
 import streamlit as st
 
 # Data loading
@@ -13,7 +14,9 @@ def load_noise_data():
     })
     noise_df['period'] = noise_df['period'].str.lower()
     noise_df['geometry'] = noise_df['WKT_LNG_LAT'].apply(wkt.loads)
-    return gpd.GeoDataFrame(noise_df, geometry='geometry').set_crs(epsg=4326)
+    noise_df = gpd.GeoDataFrame(noise_df, geometry='geometry').set_crs(epsg=4326)
+    noise_df['centroid'] = noise_df['geometry'].centroid
+    return noise_df
 
 @st.cache_data
 def load_concert_data():

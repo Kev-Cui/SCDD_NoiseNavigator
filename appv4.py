@@ -88,6 +88,29 @@ def main_layout():
 
         st.markdown("---")
 
+        show_alerts = st.checkbox(
+            "🔴 Noise Alerts", 
+            value=True,
+            help="Toggle noise alert markers on/off"
+        )
+        alert_level = st.selectbox(
+            "Alert Sensitivity:",
+            options=["Low", 
+                    "Med", 
+                    "High"],
+            index=0,
+            help="Adjust sensitivity for noise alerts"
+        )
+
+        ALERT_LEVELS = {
+            "Low": [6] if time_mode == 'day' else [16],
+            "Med": [5,6] if time_mode == 'day' else [15,16],
+            "High": [4,5,6] if time_mode == 'day' else [14,15,16]
+        }
+
+        # Store in session state for persistence
+        st.session_state.alert_level = ALERT_LEVELS[alert_level]
+
         st.markdown("**Noise Levels**")
         
         # Determine available levels based on time mode
@@ -152,6 +175,39 @@ def main_layout():
                 prefer_canvas=True,
                 zoom_control=False
             )
+            significant_noise = noise_gdf[
+                noise_gdf['legend'].isin([6] if time_mode == 'day' else [16])
+            ]
+            
+            if show_alerts and not significant_noise.empty:
+                for _, row in significant_noise.iterrows():
+                    # Determine alert severity
+                    alert_value = row['legend']
+                    if alert_value == st.session_state.alert_level[0]:
+                        color = 'red'
+                        icon = 'exclamation-triangle'
+                    elif alert_value == st.session_state.alert_level[-1]:
+                        color = 'darkred'
+                        icon = 'exclamation-triangle'
+                    else:
+                        color = 'orange'
+                        icon = 'exclamation-circle'
+
+                    folium.Marker(
+                        location=[row['centroid'].y, row['centroid'].x],
+                        icon=folium.Icon(
+                            color=color,
+                            icon=icon,
+                            prefix='fa'
+                        ),
+                        popup=f"""
+                        <b>{icon.replace('-', ' ').title()} Alert!</b><br>
+                        Severity: {alert_value - (5 if time_mode=='day' else 15)}/3<br>
+                        Source: {row['source_type']}<br>
+                        Radius: {row.geometry.area:.1f} km²
+                        """,
+                        tooltip=f"{['High','Higher','Highest'][alert_value%10 -6]} Noise Zone"
+                    ).add_to(m)
             
             # Add noise data with original styling
             if not noise_filter.empty:
