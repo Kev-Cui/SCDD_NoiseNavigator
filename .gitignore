@@ -17,3 +17,5 @@ data/local/
 # Ignore environment-specific files
 .env
 .env.local
+
+*.mp4
