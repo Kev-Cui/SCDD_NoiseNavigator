@@ -223,17 +223,17 @@ def main_layout():
                     ).add_to(m)
                     
                     # Center marker
-                    # folium.Marker(
-                    #     location=[row['center'].y, row['center'].x],
-                    #     icon=folium.Icon(
-                    #         color='F7F9FC' if time_mode == 'night' else 'white',
-                    #         icon_color=CONSTRUCTION_COLOR['icon'],
-                    #         icon='wrench',
-                    #         prefix='fa'
-                    #     ),
-                    #     popup=f"<b>{row['Project_Abbreviation']}</b><br>"
-                    #         f"Start Date: {row['Planned_Construction_Start'].strftime('%Y-%m-%d')}"
-                    # ).add_to(m)
+                    folium.Marker(
+                        location=[row['center'].y, row['center'].x],
+                        icon=folium.Icon(
+                            color='F7F9FC' if time_mode == 'night' else 'white',
+                            icon_color=CONSTRUCTION_COLOR['icon'],
+                            icon='wrench',
+                            prefix='fa'
+                        ),
+                        popup=f"<b>{row['Project_Abbreviation']}</b><br>"
+                            f"Start Date: {row['Planned_Construction_Start'].strftime('%Y-%m-%d')}"
+                    ).add_to(m)
             
             return m
         st.markdown('<div id="main-map" class="dashboard-box">', unsafe_allow_html=True)
