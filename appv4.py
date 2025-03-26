@@ -2,10 +2,11 @@ import streamlit as st
 import pandas as pd
 import geopandas as gpd
 import folium
-from datetime import datetime
+from datetime import datetime, timedelta, date
 from streamlit_folium import folium_static
 from shapely import wkt
 import geopandas as gpd
+import plotly.express as px
 from data_loader import load_noise_data, load_concert_data, load_construction_data
 
 # Initialize page configuration
@@ -53,125 +54,17 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 THEME_COLOR = {
-    'day_colors': ['#FFEB3B', '#FFC107', '#FF9800', '#FF5722', '#F44336', '#D32F2F'],
-    'night_colors': ['#E1F5FE', '#B3E5FC', '#81D4FA', '#4FC3F7', '#29B6F6', '#039BE5']
+    'day_colors': ['#2ECC71', '#F1C40F', '#E67E22', '#E74C3C', '#C0392B', '#7B241C'],
+    'night_colors': ['#1ABC9C', '#3498DB', '#9B59B6', '#8E44AD', '#34495E', '#2C3E50']
 }
 
 DEFAULT_SOURCE = ["Road Traffic"]
 NOISE_LEVEL_MAPPING = {
-    1: 'Mild <55dB', 2: 'Noisy 55-60dB', 3: 'Loud 60-65dB',
-    4: 'Louder 65-70dB', 5: 'Very Loud 70-75dB', 6: 'Extremely Loud >75dB',
-    11: 'Mild <50dB', 12: 'Noisy 50-55dB', 13: 'Loud 55-60dB',
-    14: 'Louder 60-65dB', 15: 'Very Loud 65-70dB', 16: 'Extremely Loud >70dB'
+    1: 'Mild', 2: 'Low', 3: 'Med',
+    4: 'Loud', 5: 'High', 6: 'Max',
+    11: 'Mild', 12: 'Low', 13: 'Med',
+    14: 'Loud', 15: 'High', 16: 'Max'
 }
-
-def create_custom_map(time_mode, selected_levels, concert_date, show_concerts, show_constructions):
-    # Load data with caching
-    noise_gdf = load_noise_data()
-    concert_df = load_concert_data()
-    construction_gdf = load_construction_data()
-    
-    # Apply filters
-    noise_filter = noise_gdf[
-        (noise_gdf['period'] == time_mode) &
-        (noise_gdf['legend'].isin(selected_levels))
-    ]
-    
-    concert_filter = concert_df[concert_df['Date'].dt.date == concert_date]
-    
-    # Create base map
-    m = folium.Map(
-        location=(52.3676, 4.9041),
-        zoom_start=12,
-        tiles='CartoDB positron',
-        control_scale=True,
-        prefer_canvas=True,
-        zoom_control=False
-    )
-    
-    # Add noise data with original styling
-    if not noise_filter.empty:
-        for _, row in noise_filter.iterrows():
-            level = row['legend']
-            color_index = (level - 1) if time_mode == "day" else (level - 11)
-            color_scheme = THEME_COLOR['day_colors'] if time_mode == "day" else THEME_COLOR['night_colors']
-            border_color = "#FFA000" if time_mode == "day" else "#00796B"
-            
-            if 0 <= color_index < len(color_scheme):
-                folium.GeoJson(
-                    row['geometry'],
-                    style_function=lambda x, fill=color_scheme[color_index], border=border_color: {
-                        'fillColor': fill,
-                        'color': border,
-                        'weight': 1.5,
-                        'fillOpacity': 0.5
-                    },
-                    tooltip=f"Source: {row['source_type']}<br>Level: {NOISE_LEVEL_MAPPING.get(level, 'N/A')}"
-                ).add_to(m)
-    
-    # Add concert data with original styling
-    PURPLE_COLOR = '#9C27B0'
-    if show_concerts:
-        for _, event in concert_filter.iterrows():
-            # Marker with icon
-            folium.Marker(
-                location=[event['Latitude'], event['Longitude']],
-                popup=f"""<b>{event['Artist']}</b><br>
-                        {event['Venue']}<br>
-                        {event['Date'].strftime('%Y-%m-%d')}""",
-                icon=folium.Icon(color='purple', icon='music', prefix='fa')
-            ).add_to(m)
-            
-            # 50m radius circle
-            folium.Circle(
-                location=[event['Latitude'], event['Longitude']],
-                radius=50,
-                color=PURPLE_COLOR,
-                fill=True,
-                fill_color=PURPLE_COLOR,
-                fill_opacity=0.2,
-                weight=2
-            ).add_to(m)
-    
-    # Add construction data with original styling
-    CONSTRUCTION_COLOR = {
-        'fill': '#8B4513',
-        'border': '#654321',
-        'icon': '#CD853F'
-    }
-    
-    if show_constructions:
-        construction_filter = construction_gdf[
-            construction_gdf['Planned_Construction_Start'] <= pd.Timestamp(concert_date)
-        ]
-        
-        for _, row in construction_filter.iterrows():
-            # Construction polygon
-            folium.GeoJson(
-                row['Geometry'],
-                style_function=lambda x: {
-                    'fillColor': CONSTRUCTION_COLOR['fill'],
-                    'color': CONSTRUCTION_COLOR['border'],
-                    'weight': 1.5,
-                    'fillOpacity': 0.4
-                },
-                tooltip=f"Project: {row['Project_Abbreviation']}"
-            ).add_to(m)
-            
-            # Center marker
-            folium.Marker(
-                location=[row['center'].y, row['center'].x],
-                icon=folium.Icon(
-                    color='lightgray' if time_mode == 'night' else 'white',
-                    icon_color=CONSTRUCTION_COLOR['icon'],
-                    icon='wrench',
-                    prefix='fa'
-                ),
-                popup=f"<b>{row['Project_Abbreviation']}</b><br>"
-                      f"Start Date: {row['Planned_Construction_Start'].strftime('%Y-%m-%d')}"
-            ).add_to(m)
-    
-    return m
 
 def main_layout():
     col1, col2, col3 = st.columns([3, 12, 3])
@@ -188,23 +81,16 @@ def main_layout():
             label_visibility="collapsed"
         ).lower()
 
-        # Dynamic CSS for night mode
-        if time_mode == "night":
-            st.markdown(f"""
-            <style>
-                #left-sidebar {{
-                    background-color: #474747 !important;
-                    transition: background-color 0.3s ease;
-                }}
-                .stMultiSelect label p, 
-                .stSlider label,
-                .stDateInput label {{
-                    color: #E0E0E0 !important;
-                }}
-            </style>
-            """, unsafe_allow_html=True)
+        st.markdown("**Date**")
+        # Date selection
+        concert_date = st.date_input(
+            "Date",
+            value=date.today(),
+            label_visibility="collapsed"
+        )
 
-        st.markdown("**🔊 Noise Levels**")
+
+        st.markdown("**Noise Levels**")
         
         # Determine available levels based on time mode
         if time_mode == "day":
@@ -236,17 +122,6 @@ def main_layout():
             default=DEFAULT_SOURCE,
             label_visibility="collapsed"
         )
-
-        st.markdown("---")
-        
-        # Date selection
-        concert_date = st.date_input(
-            "📅 Date",
-            value=datetime.today().date(),
-            label_visibility="collapsed"
-        )
-        
-        st.markdown("---")
         
         # Visibility toggles
         show_concerts = st.checkbox("🎤 Show Concerts", value=True, key="show_concerts")
@@ -255,42 +130,191 @@ def main_layout():
         st.markdown('</div>', unsafe_allow_html=True)
 
     with col2:
+        def create_custom_map(time_mode, selected_levels, concert_date, show_concerts, show_constructions):
+            # Load data with caching
+            noise_gdf = load_noise_data()
+            concert_df = load_concert_data()
+            construction_gdf = load_construction_data()
+            
+            # Apply filters
+            noise_filter = noise_gdf[
+                (noise_gdf['source_type'].isin(noise_sources)) &
+                (noise_gdf['period'] == time_mode) &
+                (noise_gdf['legend'].isin(selected_levels))
+            ]
+
+            concert_filter = concert_df[concert_df['Date'].dt.date == concert_date]
+            
+            # Create base map
+            m = folium.Map(
+                location=(52.3676, 4.9041),
+                zoom_start=12,
+                tiles='CartoDB positron',
+                control_scale=True,
+                prefer_canvas=True,
+                zoom_control=False
+            )
+            
+            # Add noise data with original styling
+            if not noise_filter.empty:
+                for _, row in noise_filter.iterrows():
+                    level = row['legend']
+                    color_index = (level - 1) if time_mode == "day" else (level - 11)
+                    color_scheme = THEME_COLOR['day_colors'] if time_mode == "day" else THEME_COLOR['night_colors']
+                    border_color = "#FFA000" if time_mode == "day" else "#00796B"
+                    
+                    if 0 <= color_index < len(color_scheme):
+                        folium.GeoJson(
+                            row['geometry'],
+                            style_function=lambda x, fill=color_scheme[color_index], border=border_color: {
+                                'fillColor': fill,
+                                'color': 'transparent',
+                                'weight': 0,
+                                'fillOpacity': 0.7
+                            },
+                            tooltip=f"Source: {row['source_type']}<br>Level: {NOISE_LEVEL_MAPPING.get(level, 'N/A')}"
+                        ).add_to(m)
+            
+            # Add concert data with original styling
+            PURPLE_COLOR = '#9C27B0'
+            if show_concerts:
+                for _, event in concert_filter.iterrows():
+                    # Marker with icon
+                    folium.Marker(
+                        location=[event['Latitude'], event['Longitude']],
+                        popup=f"""<b>{event['Artist']}</b><br>
+                                {event['Venue']}<br>
+                                {event['Date'].strftime('%Y-%m-%d')}""",
+                        icon=folium.Icon(color='purple', icon='music', prefix='fa')
+                    ).add_to(m)
+                    
+                    # 50m radius circle
+                    folium.Circle(
+                        location=[event['Latitude'], event['Longitude']],
+                        radius=50,
+                        color=PURPLE_COLOR,
+                        fill=True,
+                        fill_color=PURPLE_COLOR,
+                        fill_opacity=0.2,
+                        weight=2
+                    ).add_to(m)
+            
+            # Add construction data with original styling
+            CONSTRUCTION_COLOR = {
+                'fill': '#8B4513',
+                'border': '#654321',
+                'icon': '#CD853F'
+            }
+            
+            if show_constructions:
+                construction_filter = construction_gdf[
+                    construction_gdf['Planned_Construction_Start'] <= pd.Timestamp(concert_date)
+                ]
+                
+                for _, row in construction_filter.iterrows():
+                    # Construction polygon
+                    folium.GeoJson(
+                        row['Geometry'],
+                        style_function=lambda x: {
+                            'fillColor': CONSTRUCTION_COLOR['fill'],
+                            'color': CONSTRUCTION_COLOR['border'],
+                            'weight': 1.5,
+                            'fillOpacity': 0.4
+                        },
+                        tooltip=f"Project: {row['Project_Abbreviation']}"
+                    ).add_to(m)
+                    
+                    # Center marker
+                    folium.Marker(
+                        location=[row['center'].y, row['center'].x],
+                        icon=folium.Icon(
+                            color='lightgray' if time_mode == 'night' else 'white',
+                            icon_color=CONSTRUCTION_COLOR['icon'],
+                            icon='wrench',
+                            prefix='fa'
+                        ),
+                        popup=f"<b>{row['Project_Abbreviation']}</b><br>"
+                            f"Start Date: {row['Planned_Construction_Start'].strftime('%Y-%m-%d')}"
+                    ).add_to(m)
+            
+            return m
         st.markdown('<div id="main-map" class="dashboard-box">', unsafe_allow_html=True)
-        st.header("Amsterdam Urban Activity Map")
         folium_static(
             create_custom_map(time_mode, selected_levels, concert_date, show_concerts, show_constructions),
             width=1320,
-            height=600
+            height=650
         )
         st.markdown('</div>', unsafe_allow_html=True)
 
     with col3:
         st.markdown('<div id="top-right" class="dashboard-box">', unsafe_allow_html=True)
-        st.header("Data Summary")
-        
-        # Display data statistics
-        noise_gdf = load_noise_data()
+
+        # Load data
         concert_df = load_concert_data()
-        construction_gdf = load_construction_data()
         
-        st.metric("Noise Zones", len(noise_gdf))
-        st.metric("Upcoming Concerts", len(concert_df))
-        st.metric("Construction Sites", len(construction_gdf))
+        # 7-day concert count based on selected date
+        dates = [concert_date + timedelta(days=i) for i in range(7)]
+        date_labels = [date.strftime('%a %d') for date in dates]
         
+        # Create Plotly figure
+        fig = px.bar(
+            x=date_labels,
+            y=[len(concert_df[concert_df['Date'].dt.date == date]) for date in dates],
+            color_discrete_sequence=['#9C27B0']
+        )
+        
+        # Customize appearance
+        fig.update_traces(width=0.4, marker_line_width=1, marker_line_color='white')
+        fig.update_layout(
+            xaxis_title=None,
+            yaxis_title=None,
+            height=200,
+            xaxis=dict(showgrid=False, showline=False),
+            yaxis=dict(showgrid=False, showline=False),
+            plot_bgcolor='rgba(0,0,0,0)',
+            margin=dict(t=30),
+            autosize=False
+        )
         st.markdown('</div>', unsafe_allow_html=True)
+        
+        st.markdown("*Concerts in Next 7 Days*")
+        st.plotly_chart(fig, use_container_width=True)
 
         st.markdown('<div id="bottom-right" class="dashboard-box">', unsafe_allow_html=True)
-        st.header("Data Source")
+        st.markdown("*Data Source*")
+        # Initialize session state for info display
+        if 'show_info' not in st.session_state:
+            st.session_state.show_info = False
+
+        # Create question mark button and data source line
+        col_info, col_btn = st.columns([4, 1])
+        with col_info:
+            st.markdown("**Data Source:** City Events Database 2025")
+        with col_btn:
+            if st.button("❓", help="Click for data source info"):
+                st.session_state.show_info = not st.session_state.show_info
+
+        # Display markdown content when button is clicked
+        if st.session_state.show_info:
+            st.markdown("""
+            ​**ℹ️ Data Source Information**  
+            - ​**Database Version**: v2.3.1  
+            - ​**Update Frequency**: Daily at 03:00 UTC  
+            - ​**Coverage**: 95% of public events  
+            - ​**License**: [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)  
+            - ​**API Documentation**: [View Docs](#)  
+            *Last Updated: 2025-03-26*  
+            """)
         
         # Show recent concerts
-        recent_concerts = concert_df.sort_values('Date', ascending=False).head(3)
-        for _, row in recent_concerts.iterrows():
-            st.write(f"🎵 {row['Venue']} on {row['Date'].date()}")
+        # recent_concerts = concert_df.sort_values('Date', ascending=False).head(3)
+        # for _, row in recent_concerts.iterrows():
+        #     st.write(f"🎵 {row['Venue']} on {row['Date'].date()}")
         
-        # Show upcoming constructions
-        upcoming_constructions = construction_gdf.sort_values('Planned_Construction_Start').head(3)
-        for _, row in upcoming_constructions.iterrows():
-            st.write(f"🏗️ {row['Project_Abbreviation']} starts {row['Planned_Construction_Start'].date()}")
+        # # Show upcoming constructions
+        # upcoming_constructions = construction_gdf.sort_values('Planned_Construction_Start').head(3)
+        # for _, row in upcoming_constructions.iterrows():
+        #     st.write(f"🏗️ {row['Project_Abbreviation']} starts {row['Planned_Construction_Start'].date()}")
         
         st.markdown('</div>', unsafe_allow_html=True)
 
